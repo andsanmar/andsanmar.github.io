@@ -42,6 +42,11 @@ h1 {
 	margin: 25px;
 }
 
+h2 {
+	line-height: 1;
+	margin: 15px;
+}
+
 p {
 	line-height: 1.4;
 	margin: 25px;
@@ -157,6 +162,18 @@ p {
 	transform: translate(-50%, -50%) rotate(-45deg); /* center, then rotate */
 }
 
+ul.top-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+
 /* Main Nav Desktop */
 .main-nav {
 	flex-grow: 1; /* fill remaining space */
@@ -209,77 +226,77 @@ p {
 	border-bottom: none;
 }
 
-/* Tablet and Mobile View */
-@media (max-width: 1080px) {
-       	.site-logo {
-		font-size: 1.8rem;
-		flex-grow: 1;
-		text-align: center;
-	}
+/* /\* Tablet and Mobile View *\/ */
+/* @media (max-width: 1080px) { */
+/*        	.site-logo { */
+/* 		font-size: 1.8rem; */
+/* 		flex-grow: 1; */
+/* 		text-align: center; */
+/* 	} */
 	
-	#drop-down-cbox + label {
-		display: block; /* unhide the mobile nav button */
-	}
+/* 	#drop-down-cbox + label { */
+/* 		display: block; /\* unhide the mobile nav button *\/ */
+/* 	} */
 	
-	.main-nav {
-		max-height: 0px; /* same vertical grow transition trick as above */
-		height: calc(100vh - 60px); /* take full vertical viewport height, -60px for nav-bar */
-		overflow: hidden;
-		position: absolute;
-		top: 60px;
-		line-height: 100px;
-		left: 0;
-		width: 100%;
-		flex-direction: column;
-		background-color: white;
-		transition: all 500ms ease-in-out;
-	}
+/* 	.main-nav { */
+/* 		max-height: 0px; /\* same vertical grow transition trick as above *\/ */
+/* 		height: calc(100vh - 60px); /\* take full vertical viewport height, -60px for nav-bar *\/ */
+/* 		overflow: hidden; */
+/* 		position: absolute; */
+/* 		top: 60px; */
+/* 		line-height: 100px; */
+/* 		left: 0; */
+/* 		width: 100%; */
+/* 		flex-direction: column; */
+/* 		background-color: white; */
+/* 		transition: all 500ms ease-in-out; */
+/* 	} */
 	
-	#drop-down-cbox:checked ~ .main-nav {
-		max-height: calc(100vh - 60px);
-		transition: all 500ms ease-in-out;
-	}
+/* 	#drop-down-cbox:checked ~ .main-nav { */
+/* 		max-height: calc(100vh - 60px); */
+/* 		transition: all 500ms ease-in-out; */
+/* 	} */
 
-	.main-nav li span {
-		position: relative;
-	}
+/* 	.main-nav li span { */
+/* 		position: relative; */
+/* 	} */
 	
-	/* design and position downward arrow */
-	.main-nav li span:after {
-		content: "";
-		width: 6px;
-		height: 6px;
-		position: absolute;
-		top: 50%;
-		margin-top: -2px;
-		margin-left: 8px;
-		transform: translateY(-50%) rotate(-45deg);
-		border-left: 2px solid #14171e;
-		border-bottom: 2px solid #14171e;
-	}
+/* 	/\* design and position downward arrow *\/ */
+/* 	.main-nav li span:after { */
+/* 		content: ""; */
+/* 		width: 6px; */
+/* 		height: 6px; */
+/* 		position: absolute; */
+/* 		top: 50%; */
+/* 		margin-top: -2px; */
+/* 		margin-left: 8px; */
+/* 		transform: translateY(-50%) rotate(-45deg); */
+/* 		border-left: 2px solid #14171e; */
+/* 		border-bottom: 2px solid #14171e; */
+/* 	} */
 	
-	.main-nav li a:hover,
-	.main-nav li span:hover {
-		background-color: #14171e;
-		color: white;
-		border-bottom: none;
-	}
+/* 	.main-nav li a:hover, */
+/* 	.main-nav li span:hover { */
+/* 		background-color: #14171e; */
+/* 		color: white; */
+/* 		border-bottom: none; */
+/* 	} */
 	
-	.main-nav li > ul li {
-		position: relative;
-	}
+/* 	.main-nav li > ul li { */
+/* 		position: relative; */
+/* 	} */
 	
-	.main-nav li > ul li a,
-	.main-nav li > ul li span {
-		background-color: #f2f2f2;
-	}
+/* 	.main-nav li > ul li a, */
+/* 	.main-nav li > ul li span { */
+/* 		background-color: #f2f2f2; */
+/* 	} */
 	
-}
+/* } */
 
 .content {
     max-width: 1000px;
     margin: auto;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-size: 1rem
 }
@@ -291,7 +308,7 @@ p {
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
-    width: 50%;
+    width: 33%;
     padding: 10px;
 }
 
