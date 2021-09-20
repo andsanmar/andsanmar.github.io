@@ -228,6 +228,13 @@ ul.top-bar {
 
 /* /\* Tablet and Mobile View *\/ */
 /* @media (max-width: 1080px) { */
+/*     #grid { */
+/* 	display: grid; */
+/* 	/\* height: 100px; *\/ */
+/* 	grid-template-columns: repeat(3, 1fr); */
+/* 	/\* grid-template-rows: 100px; *\/ */
+/*     }    */
+/* } */
 /*        	.site-logo { */
 /* 		font-size: 1.8rem; */
 /* 		flex-grow: 1; */
