@@ -357,6 +357,13 @@ div.hideable {
   /* grid-template-rows: 100px; */
 }
 
+#columngrid {
+  align-self: start;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
 /* #columngrid { */
 /*     grid-column: 1/3; */
 /* } */
